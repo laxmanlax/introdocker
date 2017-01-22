@@ -29,13 +29,13 @@ It uses linux kernel features namespace and control groups . Namespaces gives us
 
 Creating a container
 
-     .docker run  [option] [image] [command] [args]
-     .docker run ubuntu :14.04 echo “hello world “
-     .docker run ubuntu:14.04 ps qx
-     .docker run -i -t  ubuntu:14.04 /bin/bash  
-     .docker run -d  ubuntu:14.04 /bin/bash
-     .docker run -d -P tomcat:7
-     .docker run -it ubuntu:14.04 /bin/bash
+     . docker run  [option] [image] [command] [args]
+     . docker run ubuntu :14.04 echo “hello world “
+     . docker run ubuntu:14.04 ps qx
+     . docker run -i -t  ubuntu:14.04 /bin/bash  
+     . docker run -d  ubuntu:14.04 /bin/bash
+     . docker run -d -P tomcat:7
+     . docker run -it ubuntu:14.04 /bin/bash
 
 
 Make changes install packages
@@ -143,8 +143,8 @@ Can be mapped to host dir
       .docker run -it --name john1 -v /john1 busybox
       .docker run -it  --name john2 --volumes-from john1 busybox
 
-Volumes in Dockerfile
----------------------------------
+ Volumes in Dockerfile
+ ---------------------------------
       VOLUME  instruction create a mount point
       String example
       VOLUME /myvolume
@@ -152,8 +152,8 @@ Volumes in Dockerfile
       VOLUME /www/website    /www/website2
 
 
-Json
----------------------------------
+ Json
+ ---------------------------------
     VOLUME [“myvolume1” , “myvolume2”]
 
 
