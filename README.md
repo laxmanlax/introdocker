@@ -144,8 +144,7 @@ Can be mapped to host dir
       .docker run -it  --name john2 --volumes-from john1 busybox
 
 Volumes in Dockerfile
-=====================
-
+---------------------------------
       VOLUME  instruction create a mount point
       String example
       VOLUME /myvolume
@@ -154,8 +153,7 @@ Volumes in Dockerfile
 
 
 Json
-====
-
+---------------------------------
     VOLUME [“myvolume1” , “myvolume2”]
 
 
@@ -180,7 +178,7 @@ Is a communication method b/w containers which allows them securely transfer dat
 
 
 Docker Operations
-=============================================================
+===================
 
 Container troubleshooting  
 Docker logs <container name >
@@ -189,6 +187,7 @@ Docker logs <container name >
      . docker logs -f -tail 1 <name>
 
      . docker run -d -P -v /nginxlogs : /var/logs/ngnix ngnix
+
 Here we can check the application logs
 
 Inspecting a container
@@ -202,7 +201,7 @@ Starting and stopping docker demon
 
 
 DOCKER MACHINE
-=========================================================
+===============
 
 Docker machine is a tool that automatically provisions docker hosts and install
 a docker engine on them  .Machine creates the server , install Docker and  
@@ -210,7 +209,7 @@ configure the docker client .
 
 
 DOCKER COMPOSE
-====================================================================
+================
 
 Is a tool for creating and  managing multi container applications Containers are
 defined in a single file called docker-compose.yml Each container run a particular
@@ -223,7 +222,7 @@ Ex :
 
 
 Some important commands
-==============================================================
+========================
 
        . docker kill $(docker ps -q)
        . docker rm $(docker ps -a)
@@ -238,5 +237,4 @@ Dockerfiles
 
 -----------------------------------
        . docker build --no-cache=true -f apache-dockerfile-ex1 -t apache-ex1 .
------------------------------------
-------------------------------------
+----------------------------------
