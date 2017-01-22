@@ -214,7 +214,8 @@ DOCKER COMPOSE
 Is a tool for creating and  managing multi container applications Containers are
 defined in a single file called docker-compose.yml Each container run a particular
 component/service of your application .
-Ex :  
+
+         Ex :  
          Web front end
          User authentication
          Payments
