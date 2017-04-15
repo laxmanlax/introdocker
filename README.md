@@ -1,5 +1,5 @@
 # introdocker
-=============
+
 What is docker:
 ===============
 
@@ -12,7 +12,6 @@ Docker swarm
 Docker compose
 Kitematics
 
-=====================================================================
 Containers based virtualization uses the kernel on the host’s os to run multiple guest  instances .
 Each guest instances is called container .
 Each container has it’s own root filesystem
